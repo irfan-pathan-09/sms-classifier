@@ -5,6 +5,27 @@ from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 import sklearn
 
+# nltk fix
+import nltk
+import os
+
+nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
+nltk.data.path.append(nltk_data_path)
+
+nltk.download('punkt', download_dir=nltk_data_path)
+nltk.download('punkt_tab', download_dir=nltk_data_path)
+
+
+
+
+
+
+
+
+
+
+
+
 stemmer = PorterStemmer()
 
 tfidf = joblib.load('vectorizer.pkl')
