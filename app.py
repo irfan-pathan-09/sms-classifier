@@ -10,6 +10,11 @@ import os
 nltk.download('punkt')
 nltk.download('punkt_tab')
 
+stemmer = PorterStemmer()
+
+tfidf = joblib.load('vectorizer.pkl')
+model = joblib.load('model.pkl')
+
 
 def transform_sms(input_sms):
     input_sms = input_sms.lower()
