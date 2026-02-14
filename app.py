@@ -6,9 +6,18 @@ from nltk.corpus import stopwords
 import sklearn
 import os
 
-# nltk fix
-nltk.download('punkt')
-nltk.download('punkt_tab')
+# nltk files are stored in the nltk_data folder in the current working directory
+# Create nltk_data folder
+nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
+os.makedirs(nltk_data_path, exist_ok=True)
+
+# Tell nltk to use this folder
+nltk.data.path.append(nltk_data_path)
+
+# Download required resources
+nltk.download('punkt', download_dir=nltk_data_path)
+nltk.download('punkt_tab', download_dir=nltk_data_path)
+nltk.download('stopwords', download_dir=nltk_data_path)
 
 stemmer = PorterStemmer()
 
