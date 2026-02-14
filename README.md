@@ -51,3 +51,38 @@ https://sms-classifier-irfan09.onrender.com
 
 ## 📂 Project Structure
 
+sms-classifier/
+│
+├── app.py
+├── model.pkl
+├── vectorizer.pkl
+├── requirements.txt
+├── runtime.txt
+├── README.md
+└── .streamlit/
+└── config.toml
+
+
+---
+
+## ⚙️ Installation (Run Locally)
+
+Clone the repository:
+
+git clone https://github.com/irfan-pathan-09/sms-classifier.git
+
+
+Go to project folder:
+
+cd sms-classifier
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+
+Run the app:
+
+streamlit run app.py
