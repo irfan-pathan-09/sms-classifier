@@ -86,3 +86,20 @@ pip install -r requirements.txt
 Run the app:
 
 streamlit run app.py
+
+
+## 👨‍💻 Author
+
+Irfan Pathan
+
+GitHub:  
+https://github.com/irfan-pathan-09
+
+LinkedIn:  
+www.linkedin.com/in/irfan-khan-b042b7305
+
+---
+
+## ⭐ Support
+
+If you like this project, please consider starring the repository!
