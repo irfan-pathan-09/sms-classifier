@@ -90,7 +90,7 @@ streamlit run app.py
 
 ## 👨‍💻 Author
 
-Irfan Pathan
+Irfan Khan Pathan
 
 GitHub:  
 https://github.com/irfan-pathan-09
